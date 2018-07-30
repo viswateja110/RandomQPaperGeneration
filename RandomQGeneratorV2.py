@@ -3,7 +3,7 @@ import random
 import xlrd
 import sys
 import json
-import pdfkit
+import pdfkit 
 from Crypto.Cipher import AES
 from Crypto import Random
 import os
@@ -318,5 +318,5 @@ print("*"*20, "encrypting...")
 # -----------encrypting the PDF
 enc.encrypt_file('finalquestionpaper1.pdf')
 print("*"*20, "deleting original file...")
-# os.remove('finalquestionpaper1.pdf')
+os.remove('finalquestionpaper1.pdf')
 print("*"*20, "paper generation completed")
